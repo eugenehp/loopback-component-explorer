@@ -67,14 +67,14 @@ explorer(app, {
   uiDirs: [
     path.resolve(__dirname, 'public'),
     path.resolve(__dirname, 'node_modules', 'swagger-ui')
-  ]
+  ],
   apiInfo: {
     'title': 'My API',
     'description': 'Explorer example app.'
   },
   resourcePath: 'swagger.json',
   version: '0.1-unreleasable'
-}));
+});
 app.use('/custom-api-root', loopback.rest());
 ```
 
